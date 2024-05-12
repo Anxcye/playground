@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteTargetsManager">
+    <targets>
+      <target name="WSL - Ubuntu" type="wsl" uuid="24befb03-c275-44ce-9f07-fc078ac03a16">
+        <config>
+          <option name="distributionMsId" value="Ubuntu" />
+          <option name="projectRootOnTarget" value="{exitCode=0, timeout=false, cancelled=false, stdout=/mnt/c/Users/axyyu/AppData/Local/JetBrains/Toolbox/apps/IDEA-U/ch-0/233.13135.103/jbr/bin&#10;, stderr=}/springboot_mybatis_quickstart" />
+        </config>
+        <ContributedStateBase type="MavenRuntime">
+          <config>
+            <option name="homePath" value="/home/axy/Develop/maven/apache-maven-3.9.6" />
+            <option name="versionString" value="Apache Maven 3.9.6 (bc0240f3c744dd6b6ec2920b3cd08dcc295161ae)" />
+          </config>
+        </ContributedStateBase>
+        <ContributedStateBase type="JavaLanguageRuntime">
+          <config>
+            <option name="homePath" value="/home/axy/Develop/java/jdk-11.0.19" />
+          </config>
+        </ContributedStateBase>
+      </target>
+    </targets>
+  </component>
+</project>

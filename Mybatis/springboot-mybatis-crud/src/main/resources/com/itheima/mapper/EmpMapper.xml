@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.itheima.mapper.EmpMapper">
+    <update id="update2">
+
+        update emp
+        set username=#{username},
+            name=#{name},
+            gender=#{gender},
+            image=#{image},
+            job=#{job},
+            entrydate=#{entrydate},
+            dept_id=#{deptId},
+            update_time=#{updateTime}
+        where id = #{id}
+    </update>
+
+    <select id="list" resultType="com.itheima.pojo.Emp">
+
+        select *
+        from emp
+        <where>
+            <if test="name != null">
+                name like concat('%', #{name}, '%')
+            </if>
+            <if test="gender != null">
+                and gender = #{gender}
+            </if>
+            <if test="begin != null and end != null">
+                and entrydate between #{begin} and #{end}
+            </if>
+            order by update_time desc
+        </where>
+    </select>
+</mapper>
